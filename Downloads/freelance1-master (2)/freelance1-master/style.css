@@ -1,0 +1,386 @@
+
+    .hero-section {
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 255, 255, 0.7)), url('photos/sumit-bisht-K3f_n5xPG6U-unsplash.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .hero-content {
+      max-width: 950px;
+      margin: auto;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .hero-section h5 {
+      font-size: 14px;
+      margin-bottom: 2rem;
+      width: 50%; /* Reduced width */
+      margin-left: auto;
+      margin-right: auto;
+      font-style: oblique;
+    }
+    .custom-btn{
+        background-color: rgb(249, 102, 4);
+        color: white;
+    }
+    .custom-btn:hover{
+        background-color: orange;
+        color:white;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .headline{
+        font-style: italic;
+    }
+    .tripthumbnail{
+        height: 300px;
+    }
+    .headlinep{
+        color:whitesmoke;
+    }
+    body{
+      font-family: 'Arial', sans-serif;
+    }
+
+    .icon img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    h5 {
+      margin-top: 20px;
+    }
+    
+    .container {
+      margin-bottom: 50px;
+    }
+    
+    .card {
+      border: none;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-img-top {
+      height: 300px;
+      object-fit: cover;
+    }
+    
+    .text-center h2 {
+      margin-bottom: 20px;
+    }
+    
+    .form-control {
+      width: 300px;
+      margin-right: 10px;
+    }
+    .indiamap{
+      height:auto;
+      margin-right: 200px;
+    }
+    .tripthumbnail1{
+       height: 150px;
+       width:150px;
+    }
+    .section3img{
+      width:150px;
+      height:150px;
+    }
+    .booking h2, .booking1{
+      font-weight:bolder ;
+      font-size: 3rem;
+      margin-top: 0px;
+    }
+    
+.card:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer; 
+}
+.subscribe{
+  background-color: rgb(195, 233, 235);
+  border-radius: 50px;
+}
+.btm{
+  font-style: italic;
+  color: rgb(176, 176, 176);
+  font-weight: bolder;
+  width:70%;
+  margin-left: 14%;
+}
+.contact-left p{
+  margin-top: 0;
+  margin-bottom:0px;
+  margin-left: 15px;
+}
+.appicons{
+  margin: 30px;
+}
+.appicons a{
+  text-decoration: none;
+  font-size: 35px;
+  margin-right: 15px;
+  color: rgb(253, 171, 8);
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.appicons a:hover{
+  color: yellow;
+  transform:translateY(-5px)
+}
+.name{
+  color:  orange;
+  font-style: oblique;
+  font-weight: bold;
+}
+.contact-left h1{
+  font-style: italic;
+  font-weight: bold;
+  display: inline-block;
+}
+.contact-left{
+  display:inline-block;
+}
+.btmfp{
+  font-style: italic ;
+  opacity: 0.5;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  background-color:rgba(255, 253, 253, 0.4);
+  z-index: 1000;
+}
+.navbar .btn {
+  background-color: orange; 
+}
+.footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  color: #666;
+}
+.footer .footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer .footer-column ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer .footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-column h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: black;
+}
+.testimonial-card {
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  transition: transform 0.3s;
+}
+.testimonial-card:hover {
+  transform: translateY(-10px);
+}
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.testimonial-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+@media (max-width: 768px) {
+
+  /* Hero section */
+  .hero-section {
+    background-size: cover;
+    height: auto;
+    padding: 50px 20px;
+    display: block;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section h5 {
+    font-size: 12px;
+    width: 100%; /* Full width on smaller screens */
+  }
+
+ 
+  .card-img-top {
+    height: 250px; /* Adjust image height for smaller screens */
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .tripthumbnail, .tripthumbnail1 {
+    height: 200px; /* Smaller thumbnail size for tablets */
+    width: auto;
+  }
+
+  .section3img {
+    width: 120px;
+    height: 120px; /* Adjusted image size */
+  }
+
+  /* Footer columns to stack vertically */
+  .footer .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Booking section adjustments */
+  .booking h2, .booking1 {
+    font-size: 2rem; /* Smaller heading size */
+  }
+
+  
+}
+@media (max-width: 768px) {
+  /* Footer adjustments */
+  .footer .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust app icons to be displayed inline */
+  .appicons {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: flex-start; /* Align icons to the start */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    margin-bottom: 10px; /* Add margin below app icons */
+  }
+
+  .appicons a {
+    margin-right: 10px; /* Space between icons */
+    font-size: 25px; /* Adjust icon size for mobile */
+  }
+
+  /* Contact Us section */
+  .contact-left {
+    display: block; /* Ensure contact info is in block */
+    margin-bottom: 10px; /* Margin below contact section */
+  }
+
+  /* Newsletter adjustments */
+  .newsletter {
+    display: flex;
+    flex-direction: column; /* Stack input and button */
+    width: 100%; /* Full width */
+  }
+
+  .form-control {
+    width: 100%; /* Full width for input */
+    margin-right: 0; /* No margin for mobile */
+  }
+
+  .newsletter button {
+    width: 100%; /* Full width for button */
+  }
+
+  /* Hide the map in the popular section */
+  .indiamap {
+    display: none; /* Hide the map on smaller screens */
+  }
+
+  /* Hide the Discover button on mobile */
+  .discover-btn {
+    display: none; /* Hide discover button on mobile */
+  }
+
+  /* Adjust images in the popular destinations section */
+  .tripthumbnail1 {
+    width: 100px; /* Adjust width for smaller screens */
+    height: 100px;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  
+  /* Footer columns stack */
+  .footer .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust app icons for mobile */
+  .appicons {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: flex-start; /* Align icons to the start */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+    margin-bottom: 10px; /* Space below icons */
+  }
+
+  /* Footer app icons size */
+  .appicons a {
+    font-size: 20px; /* Adjust icon size for mobile */
+    margin-right: 10px; /* Space between icons */
+  }
+
+  /* Hide the map in the popular section */
+  .indiamap {
+    display: none; /* Hide map for mobile */
+  }
+
+  /* Adjust images in the popular section */
+  .tripthumbnail1 {
+    width: 100%; /* Further reduce image size for mobile */
+    height: 150px;
+  }
+
+  /* Hide the Discover button on mobile */
+  .discover-btn {
+    display: none;
+  }
+
+  /* Newsletter adjustments */
+  .newsletter {
+    display: flex;
+    flex-direction: column; /* Stack input and button */
+    width: 100%; /* Full width */
+  }
+
+  .form-control {
+    width: 100%; /* Full width for input */
+  }
+
+  .newsletter button {
+    width: 100%; /* Full width for button */
+  }
+}
+

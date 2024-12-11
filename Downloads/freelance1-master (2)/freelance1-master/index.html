@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spiritual Awakening Tours</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+  <script src="https://kit.fontawesome.com/ea97f930dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="./photos/logo(1).jpg" alt="Logo" class="logo me-2 img-fluid"> 
+        <span>SPIRITUAL AWAKENING</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#packaages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn text-white" href="./booking/book.html">Get in Touch</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center py-5">
+    <div class="hero-content container">
+      <h1 class="headline display-4">A Journey of <span class="name">Self-discovery</span> and Spiritual Growth</h1>
+      <h5 class="headlinep mb-4">We always try to make our customers happy. We provide all kinds of facilities. Your satisfaction is our main priority.</h5>
+      <a href="#" class="btn custom-btn discover-btn mt-3" onclick="scrollToSection('packages')">Discover more</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Services</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <div class="card p-3" onclick="window.location.href='./booking/book.html'">
+            <i class="fa-solid fa-ticket"></i>
+            <h5 class="mt-3">Ticket Booking</h5>
+            <p>We book all kinds of national or international tickets for your destination.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card p-3" onclick="window.location.href='hotel-booking.html'">
+            <i class="fa-solid fa-hotel"></i>
+            <h5 class="mt-3">Hotel Booking</h5>
+            <p>You can easily book your hotel according to your budget through our website.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card p-3" onclick="window.location.href='#packages'">
+            <i class="fa-solid fa-route"></i>
+            <h5 class="mt-3">Tour Plan</h5>
+            <p>We provide you the best plan within a short time to explore more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="packages py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Packages</h2>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="photos/arupadaiveedu.jpg" class="card-img-top tripthumbnail img-fluid" alt="Arupadai Veedu">
+            <div class="card-body text-center">
+              <h5 class="card-title">Arupadai Veedu</h5>
+              <a href="./packages/arupadaiveedutripplan.html" class="btn custom-btn">More Details ></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="photos/108divyadesam.jpg" class="card-img-top tripthumbnail img-fluid" alt="108 Divya Desam">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pancha bootha Sthala Tour</h5>
+              <a href="./packages/Pancha bootha sthala tour/pancha.html" class="btn custom-btn">More Details ></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="./photos/bg1.jpg" class="card-img-top tripthumbnail img-fluid" alt="Thai Mookambika Temple">
+            <div class="card-body text-center">
+              <h5 class="card-title">Navagraha Temples Tour</h5>
+              <a href="./packages/Navagraha Temples/Navagraha.html" class="btn custom-btn">More Details ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="./packages/Holistic Tamilnadu Tour/Holistic.html" class="card-img-top tripthumbnail img-fluid" alt="Thai Mookambika Temple">
+            <div class="card-body text-center">
+              <h5 class="card-title">Holistic Tamilnadu Tour</h5>
+              <a href="./packages/Holistic Tamilnadu Tour/Holistic.html" class="btn custom-btn">More Details ></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Add more packages here 
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <img src="photos/newpackage.jpg" class="card-img-top tripthumbnail img-fluid" alt="New Package">
+            <div class="card-body text-center">
+              <h5 class="card-title">New Package</h5>
+              <a href="packages/arupadaiveedudescript.html" class="btn custom-btn">More Details ></a>
+            </div>
+          </div>
+        </div> -->
+       
+
+
+        
+        
+      </div> <!-- End of row -->
+    </div>
+  </section>
+  
+  <div class="container py-5">
+    <div>
+        <h2 class="text-center mb-5">Our popular destinaions</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="photos/indiamap.jpg" alt="India Map" class="img-fluid ms-1 indiamap">
+      </div>
+      <div class="col-lg-6">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="photos/arupadaiveedu.jpg" class="img-fluid rounded-start tripthumbnail1" alt="Arupadai Veedu">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Arupadai Veedu</h5>
+                <p class="card-text">20+ Spots 2D & 3N</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="photos/108divyadesam.jpg" class="img-fluid rounded-start tripthumbnail1" alt="Divya Desam">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Divya Desam</h5>
+                <p class="card-text">25+ Spots 3D & 3N</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="photos/mookambikai.jpg" class="img-fluid rounded-start tripthumbnail1" alt="Thai Mookambika Temple">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Thai Mookambika Temple</h5>
+                <p class="card-text">20+ Spots 3D & 2N</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Booking Steps -->
+  <div class="container py-5">
+    <h2 class="text-center mb-4 booking">Book your next trip in 3 easy steps</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <div class="card p-3" onclick="scrollToSection('packages')">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <h5 class="mt-3">Choose Destination</h5>
+          <p>Choose your dream spiritual destination to start your journey.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3" onclick="window.location.href='booking/book.html'">
+          <i class="fa-solid fa-bars"></i>
+          <h5 class="mt-3">Fill the Booking Form</h5>
+          <p>Fill the booking form, and our expert will contact you to confirm the spiritual trip.</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card p-3">
+          <i class="fa-solid fa-bus"></i>
+          <h5 class="mt-3">Start your Journey</h5>
+          <p>Get the ticket confirmation and start your spiritual journey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonials Section -->
+<section class="testimonial-section">
+  <div class="container">
+    <h2 class="text-center mb-5">What Our Customers Say</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <img src="customer1.jpg" alt="Customer photo" class="testimonial-image mb-3"> <!-- Replace with customer image -->
+          <h5>Rajan</h5>
+          <p class="text-muted">Traveller</p>
+          <p>"The trip was a fantastic experience! Everything was perfectly organized, and I felt taken care of every step of the way."</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <img src="#" alt="Customer photo" class="testimonial-image mb-3"> <!-- Replace with customer image -->
+          <h5>Sunil</h5>
+          <p class="text-muted">Spiritual Seeker</p>
+          <p>"A journey of self-discovery and spiritual enlightenment. The guides were knowledgeable, and the places were awe-inspiring."</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <img src="customer3.jpg" alt="Customer photo" class="testimonial-image mb-3"> <!-- Replace with customer image -->
+          <h5>Rajesh Kumar</h5>
+          <p class="text-muted">Pilgrim</p>
+          <p>"Highly recommended for anyone looking for a meaningful travel experience. The entire team was professional and courteous."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer py-4 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <h5>SPIRITUAL AWAKENING</h5>
+          <div class="appicons mt-2">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-3 col-6 contact-left">
+          <h6 class="mt-3">Contact Us</h6>
+          <p>+91 8122650036</p>
+          <p>spiritualawakeningtours@gmail.com</p>
+        </div>
+         <!-- Newsletter Subscription -->
+         <div class="col-md-3 " id="newsletter">
+          <h6>Join Our Newsletter</h6>
+          <form class="newsletter d-flex" name="submit-to-google-sheet">
+              <input type="email" class="form-control" id="subbtn-input" name="Recipient" placeholder="Your email address" required>
+              <button type="submit" class="btn custom-btn" id="subbtn">Subscribe</button>
+              
+          </form>
+          <small>We will send you weekly updates for your better tour packages.</small>
+          <p id="message"></p>
+      </div>
+  </div>
+</div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

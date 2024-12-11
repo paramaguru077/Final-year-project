@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+}
+
+.form-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.form-section h4{
+    color: #d12b0e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.form-section button{
+    font-size: 15px;
+    color: #fff;
+    background-color: #ffa500;
+}
+.form-section button:hover{
+    background: white;
+    color:#ffa500;
+    font-weight: bold;
+    border: none;
+    
+}
+.form-section label{
+   
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form-section form input {
+    margin-bottom: 10px;
+}
+
+/* navbar*/
+.navbar .btn {
+    background-color: orange; /* Coral color for the button */
+}
+/* to make center*/
+#middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}

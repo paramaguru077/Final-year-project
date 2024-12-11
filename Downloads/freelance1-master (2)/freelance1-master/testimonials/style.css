@@ -1,0 +1,478 @@
+/*.hero-section {
+    background: url('./Images/backgrond.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./Images/backgrond.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .home .content{
+    text-align: center;
+    padding-top: 200px;
+  }
+  .home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 550;
+    text-shadow: 0px 1px 1px black;
+  }
+  .home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+  }
+  .home .content p{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+  .changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 1px 1px 1px black;
+    animation: changetext 10s infinite linear;
+  }/*
+  @keyframes changetext{
+    0%{content: "Divya Desam";}
+    
+    20%{content: "Thai Mookambika Temple";}
+   
+    40%{content: "Arupadai Veedy";}
+   
+    60%{content: "Divya Desam";}
+   
+    80%{content: "Thai Mookambika Temple";}
+  
+    100%{content: "Arupadai Veedy";}
+  }*/
+  .home .content a{
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  .home .content a:hover{
+    background: #ffa500;
+    color: white;
+  }
+  @media (max-width: 850px){
+    .home{
+      background-position: 50%;
+    }
+  }
+  @media (max-width: 450px){
+    .home .content h5{
+      font-size: 25px;
+    }
+    .home .content h1{
+      font-size: 38px;
+    }
+    .home .content p{
+      font-size: 13px;
+    }
+  }
+
+.navbar .btn {
+    background-color: #ff6347; /* Coral color for the button */
+}
+/*tour information*/
+.tour-card {
+    border: 1px solid rgba(223, 150, 14, 0.568);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.tour-card h2 {
+    color: #FF6347;
+}
+
+.tour-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tour-info li {
+    margin-bottom: 10px;
+    
+}
+.tour-info li strong{
+    color: #FF6347;
+}
+.tour-card button{
+    font-size: 15px;
+    color: #fff;
+    background-color: #ffa500;
+}
+.tour-card button:hover{
+    background: white;
+    color:#ffa500;
+    font-weight: bold;
+    
+}
+/* booking*/
+.form-section {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.form-section h4{
+    color: #d12b0e;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+.form-section button{
+    font-size: 15px;
+    color: #fff;
+    background-color: #ffa500;
+}
+.form-section button:hover{
+    background: white;
+    color:#ffa500;
+    font-weight: bold;
+    border: none;
+    
+}
+.form-section label{
+   
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form-section form input {
+    margin-bottom: 10px;
+}
+/* gallery*/
+.gallery-section {
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.gallery-section button{
+    font-size: 15px;
+    color: #fff;
+    background-color: #ffa500;
+}
+.gallery-section button:hover{
+    background: white;
+    color:#ffa500;
+    font-weight: bold;
+    border: none;
+    
+}
+
+.gallery-heading {
+    font-size: 2.5rem;
+    color:#fff;
+    text-shadow: 2px 2px 4px #000000;
+    padding:.5rem 0;
+    text-transform: none;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.illustration img {
+    width: 100%;
+    height: auto;
+}
+/* footer
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    color: #666;
+}
+
+.footer .footer-logo h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer .footer-logo p {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.footer .social-icons a {
+    margin-right: 15px;
+    color: #666;
+}
+
+.footer .social-icons a:hover {
+    color: #FF6347;
+}
+
+.footer .footer-column h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-column ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer .footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.newsletter input[type="email"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(100% - 90px);
+    border-radius: 5px 0 0 5px;
+}
+
+.newsletter button {
+    border-radius: 0 5px 5px 0;
+}
+
+.newsletter small {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}*/
+/* footer new*/
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    color: #666;
+  }
+  .footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer .footer-column ul li a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footer .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .footer-column h6 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+  }
+  /* Existing styles retained */
+  
+  /* Media query for tablets and devices with max-width of 768px */
+  @media (max-width: 768px) {
+  
+    /* Hero section */
+    .hero-section {
+      background-size: cover;
+      height: auto;
+      padding: 50px 20px;
+      display: block;
+    }
+  
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-section h5 {
+      font-size: 12px;
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    /* Cards adjustments for tablet screens */
+    .card-img-top {
+      height: 250px; /* Adjust image height for smaller screens */
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+  
+    .tripthumbnail, .tripthumbnail1 {
+      height: 200px; /* Smaller thumbnail size for tablets */
+      width: auto;
+    }
+  
+    .section3img {
+      width: 120px;
+      height: 120px; /* Adjusted image size */
+    }
+  
+    /* Footer columns to stack vertically */
+    .footer .footer-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Booking section adjustments */
+    .booking h2, .booking1 {
+      font-size: 2rem; /* Smaller heading size */
+    }
+  
+    
+  }
+  @media (max-width: 768px) {
+    /* Footer adjustments */
+    .footer .footer-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Adjust app icons to be displayed inline */
+    .appicons a{
+      text-decoration: none;
+      font-size: 35px;
+      margin-right: 15px;
+      color: rgb(253, 171, 8);
+      display: inline-block;
+      transition: transform 0.5s;
+    }
+    .appicons a:hover{
+      color: yellow;
+      transform:translateY(-5px)
+    }
+  
+    /* Contact Us section */
+    .contact-left {
+      display: block; /* Ensure contact info is in block */
+      margin-bottom: 10px; /* Margin below contact section */
+    }
+  
+    /* Newsletter adjustments */
+    .newsletter {
+      display: flex;
+      flex-direction: column; /* Stack input and button */
+      width: 100%; /* Full width */
+    }
+  
+    .form-control {
+      width: 100%; /* Full width for input */
+      margin-right: 0; /* No margin for mobile */
+    }
+  
+    .newsletter button {
+      width: 100%; /* Full width for button */
+    }
+  
+    /* Hide the map in the popular section */
+    .indiamap {
+      display: none; /* Hide the map on smaller screens */
+    }
+  
+    /* Hide the Discover button on mobile */
+    .discover-btn {
+      display: none; /* Hide discover button on mobile */
+    }
+  
+    /* Adjust images in the popular destinations section */
+    .tripthumbnail1 {
+      width: 100px; /* Adjust width for smaller screens */
+      height: 100px;
+    }
+  }
+  
+  
+  
+  @media (max-width: 480px) {
+    
+    /* Footer columns stack */
+    .footer .footer-column {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    /* Adjust app icons for mobile */
+    .appicons {
+      display: flex; /* Use flexbox for horizontal layout */
+      justify-content: flex-start; /* Align icons to the start */
+      flex-wrap: wrap; /* Allow wrapping if necessary */
+      margin-bottom: 10px; /* Space below icons */
+    }
+  
+    /* Footer app icons size */
+    .appicons a {
+      font-size: 20px; /* Adjust icon size for mobile */
+      margin-right: 10px; /* Space between icons */
+    }
+  
+    /* Hide the map in the popular section */
+    .indiamap {
+      display: none; /* Hide map for mobile */
+    }
+  
+    /* Adjust images in the popular section */
+    .tripthumbnail1 {
+      width: 100%; /* Further reduce image size for mobile */
+      height: 150px;
+    }
+  
+    /* Hide the Discover button on mobile */
+    .discover-btn {
+      display: none;
+    }
+  
+    /* Newsletter adjustments */
+    .newsletter {
+      display: flex;
+      flex-direction: column; /* Stack input and button */
+      width: 100%; /* Full width */
+    }
+  
+    .form-control {
+      width: 100%; /* Full width for input */
+    }
+  
+    .newsletter button {
+      width: 100%; /* Full width for button */
+    }
+  }
+  

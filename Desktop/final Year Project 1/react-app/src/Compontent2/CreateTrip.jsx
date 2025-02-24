@@ -80,6 +80,9 @@ const CreateTrip = () => {
         <div className='flex justify-center my-4'>
             <button className='px-4 py-2 text-[#fff] bg-amber-500 rounded-xl cursor-pointer hover:ring-1 ring-amber-500 hover:bg-amber-50 hover:text-amber-500 text-xl transition-all duration-150'>Generate Trip</button>
         </div>
+        <div>
+            <button>guru</button>
+        </div>
         
         
 

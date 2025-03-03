@@ -48,8 +48,8 @@ const Service = () => {
 
   return  (
     <div className='max-w-[1230px] w-full m-auto  mt-10'>
-      <h1 className='font-bold text-center p-3 text-2xl lg:text-3xl drop-shadow-xl text-[#320b8b] tracking-wide relative'>Personalized Travel Planning with AI Precision</h1>
-      <span className='absolute left-1/2 transform -translate-x-1/2  h-[4px] w-[150px] bg-[#8c86da] rounded-2xl'>
+      <h1 className='font-bold text-center p-3 text-2xl lg:text-3xl drop-shadow-xl text-[#a0451b] tracking-wide relative'>Personalized Travel Planning with AI Precision</h1>
+      <span className='absolute left-1/2 transform -translate-x-1/2  h-[4px] w-[150px] bg-[#f1975b] rounded-2xl'>
       
       </span>
       <p className='tex<t-center text-[15px] font-medium mt-2 p-2 text-neutral-500 m-2'>Experience hassle-free travel planning with our AI-powered Trip Advisor. Get personalized recommendations for destinations, accommodations, and activities based on your preferences. Let our smart assistant curate the perfect itinerary for you!</p>
@@ -57,11 +57,11 @@ const Service = () => {
       <div className='mt-12 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-6'>
         {
           feature.map((item,i)=>(
-            <div className='border flex items-center rounded-2xl hover:shadow-xl shadow-blue-100 border-blue-800 bg-blue-50 hover:ring-1 hover:-translate-y-1 hover:scale-105 transition-all duration-150 delay-100 cursor-pointer mx-16 md:mx-1 ' key={i}>
-              <span className='text-2xl text-blue-700 bg-blue-200 p-4 rounded-full mx-4'>{item.logo}</span>
+            <div className='border flex items-center rounded-2xl hover:shadow-xl shadow-blue-100 border-[#e97777] bg-blue-50 hover:ring-0 hover:-translate-y-1 hover:scale-105 transition-all duration-150 delay-100 cursor-pointer mx-16 md:mx-1 ' key={i}>
+              <span className='text-2xl text-[#f31010] bg-blue-200 p-4 rounded-full mx-4'>{item.logo}</span>
               <div className='flex flex-col py-3 px-3 mx-1 my-2'>
-                <h1 className='font-semibold text-xl text-cyan-500 p-2'>{item.title}</h1>
-                <span className='w-[30px] h-[2px] mt-[-5px]  bg-neutral-400 ml-2'></span>
+                <h1 className='font-semibold text-xl text-[#d33e3e] p-2'>{item.title}</h1>
+                <span className='w-[50px] h-[2px] mt-[-5px]  bg-[#f85e5e] ml-2 rounded-2xl'></span>
                 <p className='text-neutral-700 p-3 text-[16px]'>{item.p}</p>
 
               </div>

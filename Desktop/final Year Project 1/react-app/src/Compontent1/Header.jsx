@@ -9,7 +9,7 @@ const Header = () => {
         setOpen(!open);
     }
   return (
-    <div className='w-full  py-6 px-2   bg-white z-50 shadow-2xl '>
+    <div className='w-full  py-6 px-2  bg-white z-50 shadow-2xl relative '>
         <div className='flex justify-between items-center '>
             <div className='flex items-center space-x-4 ml-8 md:ml-9' >
                 <img src={logo} alt="logo" className='w-8 rounded-full'/>
@@ -32,7 +32,7 @@ const Header = () => {
             </div>
 
         </div>
-        <div className={`md:hidden fixed   bg-white flex flex-col item-center gap-5 overflow-hidden transition-all duration-500 delay-100 transform origin-top ${open ? "scale-y-100 h-auto":"scale-y-0 h-0"}`}>
+        <div className={`md:hidden absolute z-50   bg-white flex flex-col item-center gap-5 overflow-hidden transition-all duration-500 delay-100 transform origin-top ${open ? "scale-y-100 h-auto":"scale-y-0 h-0"}`}>
         
             
             <div className='m-10 flex flex-col items-center gap-5' >

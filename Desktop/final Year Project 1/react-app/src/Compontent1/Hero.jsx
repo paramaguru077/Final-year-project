@@ -1,7 +1,9 @@
 import React from 'react'
 import heroimage from './Images/heroimage.jpg'
 import { Link } from 'react-router-dom'
+
 const Hero = () => {
+  
   return (
     <div className='w-full relative mt-0.3 shadow-2xl shadow-black mb-2'>
         <img src={heroimage} alt="hero-section" className='w-full h-full md:h-screen object-center' />

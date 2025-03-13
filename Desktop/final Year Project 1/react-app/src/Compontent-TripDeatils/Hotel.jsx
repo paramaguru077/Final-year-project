@@ -19,7 +19,7 @@ const Hotel = ({trip}) => {
                 <p className='text-center text-green-600'><span className='text-xl text-[#471111] '>Price: </span>{item?.price}</p>
                 <p className='text-center font-medium text-[16px] '>Address: <span className='font-semibold text-neutral-800'>{item?.hotelAddress}</span></p>
                 <p className='text-center mt-3 text-xl mb-2 font-bold text-neutral-500'>Features</p>
-                <div className='flex justify-around gap-3 items-center'>
+              {/*  <div className='flex justify-around gap-3 items-center'>
                   {
                     item?.amenities.map((item2,i)=>(
                       <div className='bg-neutral-300 px-4 py-1 rounded-xl' key={i}>
@@ -32,7 +32,7 @@ const Hotel = ({trip}) => {
 
 
 
-                </div>
+                </div>*/}
 
                 
 

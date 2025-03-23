@@ -52,13 +52,14 @@ export const SelectBudgetOptions=[
 ]
 
 
-export const AI_PROMPT = `Generate Travel Plan for Location: {location}, for {totalDays} Days for {traveler} with a {budget} budget.  
-Give me:  
-1. Hotels options list with:  
-   - HotelName, Hotel Address, Price in rupees, Hotel Image URL, Geo Coordinates, Rating, Description.  
-2. Restaurants options list with:  
-   - Restaurant Name, Address, Cuisine Type, Price Range in rupees, Rating, Image URL, Geo Coordinates, Description.  
-3. Suggested itinerary with:  
-   - Place Name, Place Details, Place Image URL, Geo Coordinates, Place Address, Ticket Pricing in rupees, Travel Time between locations for {totalDays} days, with each day's plan including the best time to visit.  
+export const AI_PROMPT = `generate travel plan for location: {location}, for {totalDays} days for {traveler} with a {budget} budget.  
+give me:  
+1. hotels options list with:  
+   - hotel name, hotel address, price in rupees, hotel image url, geo coordinates, rating, description.  
+2. restaurants options list with:  
+   - restaurant name, address, cuisine type, price range in rupees, rating, image url, geo coordinates, description.  
+3. suggested itinerary with:  
+   - place name, place details, place image url, geo coordinates, place address, ticket pricing in rupees, travel time between locations for {totalDays} days, with each day's plan including the best time to visit.  
 
-Return the response in JSON format.`;
+return the response in json format.`;  
+

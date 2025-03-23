@@ -7,7 +7,7 @@ import { RouterProvider } from 'react-router-dom'
 import Router from './Routers/Router.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <GoogleOAuthProvider clientId="786428451608-o1ia6lreo2rjh3g294bcoshnqi81khtl.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_API}>
        <RouterProvider router={Router}/>
 
     </GoogleOAuthProvider>

@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import { FaShoppingBag } from "react-icons/fa";
-import { AI_PROMPT,SelectBudgetOptions,SelectTravelesList } from './Constants/option';
+import { AI_PROMPT,SelectBudgetOptions,SelectTravelesList } from './Constants/Option.jsx'
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { chatSession } from '../Services/AIModal';
-import { useGoogleLogin } from '@react-oauth/google';
+import { googleLogout, useGoogleLogin } from '@react-oauth/google';
 import axios from 'axios'
 import { doc, setDoc } from 'firebase/firestore';
 import { db } from '../Services/Firebaseconfig';
 import{useNavigate} from 'react-router-dom'
 import logo from '../Compontent1/Images/logo final.jpg'
+import { FaGoogle } from "react-icons/fa";
+
 const CreateTrip = () => {
     const data=[{
         place:"",
@@ -114,6 +116,13 @@ const CreateTrip = () => {
 
 
     }
+    const Logout =()=>{
+        googleLogout();
+        localStorage.clear()
+        window.location.reload();
+        navigate('/')
+
+    }
 
 
   return (
@@ -127,7 +136,7 @@ const CreateTrip = () => {
 
          {!user?
           <div> <button className='py-2 px-6 border-1 text-neutral-950 ring-1  ring-neutral-800 focus:ring-amber-200  focus:ring-1 rounded-xl cursor-pointer font-medium hover:border-amber-100  duration-100' onClick={()=>setIsOpen(!isOpen)} >Signup</button></div>:
-          <div><button className='py-2 px-6 border-1 text-neutral-950 ring-1  ring-neutral-800 focus:ring-amber-200  focus:ring-1 rounded-xl cursor-pointer font-medium hover:border-amber-100  duration-100' >Logout</button> </div>
+          <div><button className='py-2 px-6 border-1 text-neutral-950 ring-1  ring-neutral-800 focus:ring-amber-200  focus:ring-1 rounded-xl cursor-pointer font-medium hover:border-amber-100  duration-100' onClick={Logout} >Logout</button> </div>
           }
 
     </div>
@@ -182,7 +191,7 @@ const CreateTrip = () => {
             </div>
 
             <div className='flex justify-center my-4'>
-                <button disabled={loading} className='px-4 py-2 flex justify-between items-center text-[#fff] bg-[#f51b1b] rounded-xl cursor-pointer hover:ring-1 ring-[#ee1111] hover:bg-amber-50 hover:text-[#f51b1b] text-xl transition-all duration-150' onClick={OnGenerateTrip}>{loading&& <AiOutlineLoading3Quarters className='h-7 w-7 animate-spin'/>}Generate Trip</button>
+                <button disabled={loading} className='px-4 py-2 flex justify-between items-center gap-2 text-[#fff] bg-[#f51b1b] rounded-xl cursor-pointer hover:ring-1 ring-[#ee1111] hover:bg-amber-50 hover:text-[#f51b1b] text-xl transition-all duration-150' onClick={OnGenerateTrip}>{loading&& <AiOutlineLoading3Quarters className='h-7 w-7 animate-spin'/>}Generate Trip</button>
             </div>
             {
                 isOpen &&
@@ -192,13 +201,14 @@ const CreateTrip = () => {
                             <h1 className='text-[17px] font-mono 
                             font-medium text-red-600'>Sign Up</h1>
                             
-                            <button className=" bg-red-500 text-xl p-2 rounded cursor-pointer active:bg-red-600" onClick={()=>setIsOpen(false)}> ✕</button>
+                            <button className="  text-xl cursor-pointer active:bg-red-600" onClick={()=>setIsOpen(false)}> ✕</button>
                             
 
                         </div>
                         <p className="text-gray-700 text-center">Welcome! Please sign up to continue.</p>
                        <div className='flex justify-center items-center'>
-                       <button onClick={login} className='border px-4 py-2 mt-4 rounded-xl text-[17px] font-medium bg-[#f32a23f6] text-amber-50 cursor-pointer hover:bg-red-500 duration-100'>Continue with google</button>
+                       <button onClick={login} className='border px-4 py-2 mt-4 rounded-xl text-[17px] font-medium bg-[#f32a23f6] text-amber-50 cursor-pointer hover:bg-red-500 duration-100 flex items-center gap-4'> <span className='bg-white p-2 text-red-500 rounded-full'><FaGoogle />
+                       </span>Continue with google</button>
                        </div>
                         
                     </div>
